@@ -299,7 +299,7 @@ const Index = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="text-2xl font-bold">
               <span className="text-white">ALICE</span>
-              <span className="text-secondary">PRO</span>
+              <span className="text-lime-400">PRO</span>
             </div>
             <div className="text-muted-foreground text-sm">
               © 2024 ALICEPRO. Первый российский бренд ракеток для падел тенниса.
