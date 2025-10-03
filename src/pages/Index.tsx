@@ -135,8 +135,8 @@ const Index = () => {
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-secondary/20 rounded-3xl blur-2xl group-hover:blur-3xl transition-all" />
               <img 
-                src="https://cdn.poehali.dev/files/a12f1c31-5db9-4f1f-bcbe-bb4a23019a78.jpg" 
-                alt="ALICEPRO Diamond" 
+                src="https://cdn.poehali.dev/files/d2739260-8dd7-425e-8baa-61d9180ec793.jpg" 
+                alt="ALICEPRO Cosmo" 
                 className="relative z-10 w-full h-auto rounded-2xl"
               />
             </div>
