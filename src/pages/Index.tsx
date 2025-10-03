@@ -18,7 +18,7 @@ const Index = () => {
             <div className="flex items-center gap-2">
               <div className="text-2xl font-bold tracking-wider">
                 <span className="text-white">ALICE</span>
-                <span className="text-secondary">PRO</span>
+                <span className="text-lime-400">PRO</span>
               </div>
             </div>
             <div className="hidden md:flex items-center gap-8">
@@ -103,11 +103,11 @@ const Index = () => {
             </p>
             <div className="grid md:grid-cols-3 gap-8 pt-8">
               <Card className="p-8 bg-card border-border hover:border-accent/50 transition-all">
-                <div className="text-4xl font-bold text-neon mb-2">+300%</div>
+                <div className="text-4xl font-bold text-neon mb-2">+86%</div>
                 <div className="text-muted-foreground">Рост популярности</div>
               </Card>
               <Card className="p-8 bg-card border-border hover:border-accent/50 transition-all">
-                <div className="text-4xl font-bold text-neon mb-2">18М+</div>
+                <div className="text-4xl font-bold text-neon mb-2">30М+</div>
                 <div className="text-muted-foreground">Игроков в мире</div>
               </Card>
               <Card className="p-8 bg-card border-border hover:border-accent/50 transition-all">
@@ -128,7 +128,7 @@ const Index = () => {
               <span className="text-neon text-sm font-semibold">НАШ ПРОДУКТ</span>
             </div>
             <h2 className="text-5xl font-bold mb-4">РАКЕТКИ ALICEPRO</h2>
-            <p className="text-xl text-muted-foreground">Выбор профессиональных спортсменов</p>
+            <p className="text-xl text-muted-foreground">Выбор профессиональных спортсменов и начинающих игроков</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
@@ -143,7 +143,7 @@ const Index = () => {
 
             <div className="space-y-8">
               <div>
-                <h3 className="text-4xl font-bold mb-4">DIAMOND 3K</h3>
+                <h3 className="text-4xl font-bold mb-4">COSMO 3K</h3>
                 <p className="text-muted-foreground text-lg">
                   Первая ракетка российского производства, созданная для максимального 
                   удовольствия от игры. Каждая характеристика продумана до мелочей.
