@@ -262,9 +262,7 @@ const Index = () => {
               <Card className="p-8 bg-black/50 border-border hover:border-accent/50 transition-all group">
                 <Icon name="Mail" className="text-accent mb-4 mx-auto group-hover:scale-110 transition-transform" size={40} />
                 <div className="font-semibold mb-2">Email</div>
-                <a href="mailto:info@alicepro.ru" className="text-muted-foreground hover:text-accent transition-colors">
-                  info@alicepro.ru
-                </a>
+                <a href="mailto:info@alicepro.ru" className="text-muted-foreground hover:text-accent transition-colors">alicepro.padel@gmail.com</a>
               </Card>
 
               <Card className="p-8 bg-black/50 border-border hover:border-accent/50 transition-all group">
