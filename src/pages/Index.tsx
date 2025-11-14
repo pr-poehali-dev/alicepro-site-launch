@@ -65,6 +65,7 @@ const Index = () => {
                   size="lg" 
                   variant="outline" 
                   className="border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground font-semibold px-8 py-6 text-lg rounded-full"
+                  onClick={() => document.getElementById('product')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   УЗНАТЬ БОЛЬШЕ
                 </Button>
