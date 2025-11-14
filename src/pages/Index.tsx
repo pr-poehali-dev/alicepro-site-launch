@@ -29,7 +29,6 @@ const Index = () => {
               </div>
             </div>
             <div className="hidden md:flex items-center gap-8">
-              <a href="#about" className="text-sm hover:text-accent transition-colors">О ПАДЕЛ</a>
               <a href="#product" className="text-sm hover:text-accent transition-colors">ПРОДУКТ</a>
               <a href="#values" className="text-sm hover:text-accent transition-colors">ЦЕННОСТИ</a>
               <a href="#distribution" className="text-sm hover:text-accent transition-colors">ДИСТРИБЬЮЦИЯ</a>
@@ -89,39 +88,6 @@ const Index = () => {
                 />
                 <div className="absolute inset-0 z-20 bg-gradient-to-t from-black/50 to-transparent rounded-2xl" />
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" className="py-24 bg-black/30">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
-            <div className="inline-block px-6 py-3 bg-secondary/20 rounded-full border border-secondary/30">
-              <span className="text-secondary text-sm font-semibold">ПАДЕЛ ТЕННИС</span>
-            </div>
-            <h2 className="text-5xl font-bold">
-              САМЫЙ БЫСТРОРАЗВИВАЮЩИЙСЯ<br />
-              ВИД СПОРТА В МИРЕ
-            </h2>
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              Падел теннис захватывает мир. Миллионы игроков на пяти континентах выбирают этот динамичный 
-              и увлекательный вид спорта. От Испании до России, от любителей до профессионалов — 
-              падел объединяет людей, которые ценят скорость, стратегию и удовольствие от игры.
-            </p>
-            <div className="grid md:grid-cols-3 gap-8 pt-8">
-              <Card className="p-8 bg-card border-border hover:border-accent/50 transition-all">
-                <div className="text-4xl font-bold text-neon mb-2">+86%</div>
-                <div className="text-muted-foreground">Рост популярности</div>
-              </Card>
-              <Card className="p-8 bg-card border-border hover:border-accent/50 transition-all">
-                <div className="text-4xl font-bold text-neon mb-2">30М+</div>
-                <div className="text-muted-foreground">Игроков в мире</div>
-              </Card>
-              <Card className="p-8 bg-card border-border hover:border-accent/50 transition-all">
-                <div className="text-4xl font-bold text-neon mb-2">110+</div>
-                <div className="text-muted-foreground">Стран играют</div>
-              </Card>
             </div>
           </div>
         </div>
