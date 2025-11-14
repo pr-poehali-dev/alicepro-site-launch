@@ -50,7 +50,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className={`space-y-8 ${isVisible ? 'animate-slide-in-left' : 'opacity-0'}`}>
               <div className="space-y-4">
-                <div className="inline-block px-4 py-2 bg-accent/20 rounded-full border border-accent/30">
+                <div className="inline-block py-2 bg-accent/20 rounded-full border border-accent/30 my-0 px-4">
                   <span className="text-neon text-sm font-semibold">DESIGN BY RUSSIA</span>
                 </div>
                 <h1 className="text-6xl md:text-7xl font-bold leading-tight">
