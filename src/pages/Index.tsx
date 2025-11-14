@@ -60,9 +60,7 @@ const Index = () => {
                 <Button 
                   size="lg" 
                   className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold px-8 py-6 text-lg rounded-full"
-                >
-                  ВЫБРАТЬ РАКЕТКУ
-                </Button>
+                >AlicePro Cosmo 3r</Button>
                 <Button 
                   size="lg" 
                   variant="outline" 
