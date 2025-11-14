@@ -367,7 +367,7 @@ const Index = () => {
                 <Button 
                   size="lg" 
                   className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold px-10 py-6 text-lg rounded-full inline-flex items-center gap-3"
-                  onClick={() => window.open('https://t.me/alicepropadel', '_blank')}
+                  onClick={() => window.open('https://t.me/pravda_rf', '_blank')}
                 >
                   <Icon name="Send" size={24} />
                   НАПИСАТЬ В TELEGRAM
