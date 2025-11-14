@@ -225,6 +225,83 @@ const Index = () => {
         </div>
       </section>
 
+      <section id="target-audience" className="py-24 bg-black/50 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-accent/5 via-transparent to-accent/5" />
+        
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16 animate-fade-in">
+              <div className="inline-block px-6 py-3 bg-accent/20 rounded-full border border-accent/30 mb-6">
+                <span className="text-neon text-sm font-semibold">ДЛЯ КОГО</span>
+              </div>
+              <h2 className="text-5xl font-bold mb-6">ДЛЯ КОГО ALICEPRO COSMO 3K</h2>
+            </div>
+
+            <div className="space-y-8">
+              <Card className="p-10 bg-gradient-to-br from-card/80 to-transparent border-accent/30 backdrop-blur-sm">
+                <div className="space-y-6">
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-accent/20 rounded-full">
+                      <Icon name="Heart" className="text-neon" size={32} />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-2xl font-bold mb-4 text-neon">Первая личная ракетка для влюблённых в падел</h3>
+                      <p className="text-lg text-muted-foreground leading-relaxed">
+                        Вы уже попробовали падел на арендных ракетках и почувствовали, как этот спорт захватывает. 
+                        Вы хотите свою первую личную ракетку, которая станет вашим надёжным партнёром на корте. 
+                        <span className="text-foreground font-semibold"> ALICEPRO Cosmo 3K</span> создана именно для таких моментов.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="grid md:grid-cols-3 gap-6 pt-6">
+                    <div className="space-y-3">
+                      <div className="flex items-center gap-3">
+                        <Icon name="TrendingUp" className="text-accent" size={24} />
+                        <h4 className="font-semibold">Рост вместе с вами</h4>
+                      </div>
+                      <p className="text-sm text-muted-foreground">
+                        Эта ракетка прослужит долгие годы, развиваясь вместе с вашими навыками. 
+                        Не придётся менять через пару месяцев.
+                      </p>
+                    </div>
+
+                    <div className="space-y-3">
+                      <div className="flex items-center gap-3">
+                        <Icon name="Zap" className="text-accent" size={24} />
+                        <h4 className="font-semibold">Мощь + Контроль</h4>
+                      </div>
+                      <p className="text-sm text-muted-foreground">
+                        Покрытие 3K карбон и наполнитель Eva Soft дают более мощный удар, 
+                        сохраняя контроль и гася вибрации.
+                      </p>
+                    </div>
+
+                    <div className="space-y-3">
+                      <div className="flex items-center gap-3">
+                        <Icon name="Shield" className="text-accent" size={24} />
+                        <h4 className="font-semibold">Следующий уровень</h4>
+                      </div>
+                      <p className="text-sm text-muted-foreground">
+                        Уже не мягкая ракетка из стекловолокна для новичков, 
+                        а настоящий инструмент для серьёзной игры.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="pt-6 border-t border-accent/20">
+                    <p className="text-center text-lg text-foreground">
+                      <span className="text-neon font-semibold">Cosmo 3K</span> — идеальный выбор для тех, 
+                      кто делает следующий шаг от первых экспериментов к настоящей любви к паделу.
+                    </p>
+                  </div>
+                </div>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="values" className="py-24 bg-black/30">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
