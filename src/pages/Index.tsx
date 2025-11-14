@@ -83,7 +83,7 @@ const Index = () => {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-accent/20 via-secondary/15 to-accent/20 rounded-2xl blur-2xl animate-pulse-glow" />
                 <img 
-                  src="https://cdn.poehali.dev/files/0943bb4b-6fdd-4702-bbf3-f4e49cf775c0.jpg" 
+                  src="https://cdn.poehali.dev/files/59d3d63d-f2a6-471a-8e0a-4f1e79cfb90d.jpg" 
                   alt="ALICEPRO Cosmo Player" 
                   className="relative z-10 w-full h-auto rounded-2xl shadow-2xl"
                 />
