@@ -333,10 +333,7 @@ const Index = () => {
               <span className="text-secondary text-sm font-semibold">ПАРТНЁРСТВО</span>
             </div>
             <h2 className="text-5xl font-bold mb-8">ДИСТРИБЬЮЦИЯ</h2>
-            <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
-              Команда ALICEPRO всегда готова к сотрудничеству с представителями бренда по всему миру. 
-              Мы ищем партнёров, которые разделяют наши ценности качества и инноваций.
-            </p>
+            <p className="text-xl text-muted-foreground mb-12 leading-relaxed">Команда ALICEPRO всегда готова к сотрудничеству  по всему миру. Мы ищем партнёров, которые разделяют наши ценности качества и инноваций.</p>
 
             <Card className="p-12 bg-gradient-to-br from-card/80 to-transparent border-border backdrop-blur-sm">
               <div className="grid md:grid-cols-3 gap-8 mb-10">
