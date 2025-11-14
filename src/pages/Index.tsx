@@ -25,6 +25,7 @@ const Index = () => {
               <a href="#about" className="text-sm hover:text-accent transition-colors">О ПАДЕЛ</a>
               <a href="#product" className="text-sm hover:text-accent transition-colors">ПРОДУКТ</a>
               <a href="#values" className="text-sm hover:text-accent transition-colors">ЦЕННОСТИ</a>
+              <a href="#distribution" className="text-sm hover:text-accent transition-colors">ДИСТРИБЬЮЦИЯ</a>
               <a href="#contact" className="text-sm hover:text-accent transition-colors">КОНТАКТЫ</a>
             </div>
           </div>
@@ -241,6 +242,64 @@ const Index = () => {
                 </p>
               </Card>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="distribution" className="py-24 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 via-transparent to-accent/10" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/5 rounded-full blur-3xl" />
+        
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-block px-6 py-3 bg-secondary/20 rounded-full border border-secondary/30 mb-6">
+              <span className="text-secondary text-sm font-semibold">ПАРТНЁРСТВО</span>
+            </div>
+            <h2 className="text-5xl font-bold mb-8">ДИСТРИБЬЮЦИЯ</h2>
+            <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
+              Команда ALICEPRO всегда готова к сотрудничеству с представителями бренда по всему миру. 
+              Мы ищем партнёров, которые разделяют наши ценности качества и инноваций.
+            </p>
+
+            <Card className="p-12 bg-gradient-to-br from-card/80 to-transparent border-border backdrop-blur-sm">
+              <div className="grid md:grid-cols-3 gap-8 mb-10">
+                <div className="space-y-3">
+                  <Icon name="Handshake" className="text-accent mx-auto" size={48} />
+                  <h3 className="text-lg font-bold">Взаимовыгодное сотрудничество</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Гибкие условия для дистрибьюторов
+                  </p>
+                </div>
+                <div className="space-y-3">
+                  <Icon name="Globe" className="text-accent mx-auto" size={48} />
+                  <h3 className="text-lg font-bold">Международное присутствие</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Расширяем географию продаж
+                  </p>
+                </div>
+                <div className="space-y-3">
+                  <Icon name="TrendingUp" className="text-accent mx-auto" size={48} />
+                  <h3 className="text-lg font-bold">Растущий рынок</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Падел — самый быстрорастущий спорт
+                  </p>
+                </div>
+              </div>
+
+              <div className="border-t border-border pt-8">
+                <p className="text-lg mb-6 text-muted-foreground">
+                  Чтобы обсудить условия взаимодействия с нами, свяжитесь через Telegram
+                </p>
+                <Button 
+                  size="lg" 
+                  className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold px-10 py-6 text-lg rounded-full inline-flex items-center gap-3"
+                  onClick={() => window.open('https://t.me/alicepropadel', '_blank')}
+                >
+                  <Icon name="Send" size={24} />
+                  НАПИСАТЬ В TELEGRAM
+                </Button>
+              </div>
+            </Card>
           </div>
         </div>
       </section>
