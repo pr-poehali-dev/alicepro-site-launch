@@ -73,12 +73,13 @@ const Index = () => {
             
             <div className={`relative ${isVisible ? 'animate-slide-in-right' : 'opacity-0'}`}>
               <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-accent/20 via-secondary/15 to-accent/20 rounded-2xl blur-2xl animate-pulse-glow" />
                 <img 
                   src="https://cdn.poehali.dev/files/46da60fb-e215-41e8-8473-cc1db49d060e.jpg" 
                   alt="ALICEPRO Cosmo Racket" 
-                  className="w-full h-auto rounded-2xl shadow-2xl"
+                  className="relative z-10 w-full h-auto rounded-2xl shadow-2xl"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-2xl" />
+                <div className="absolute inset-0 z-20 bg-gradient-to-t from-black/50 to-transparent rounded-2xl" />
               </div>
             </div>
           </div>
