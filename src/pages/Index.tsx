@@ -2,6 +2,13 @@ import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import Icon from '@/components/ui/icon';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel';
 
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -133,13 +140,43 @@ const Index = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-            <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-secondary/20 rounded-3xl blur-2xl group-hover:blur-3xl transition-all" />
-              <img 
-                src="https://cdn.poehali.dev/files/d2739260-8dd7-425e-8baa-61d9180ec793.jpg" 
-                alt="ALICEPRO Cosmo" 
-                className="relative z-10 w-full h-auto rounded-2xl"
-              />
+            <div className="relative">
+              <Carousel className="w-full">
+                <CarouselContent>
+                  <CarouselItem>
+                    <div className="relative group">
+                      <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-secondary/20 rounded-3xl blur-2xl group-hover:blur-3xl transition-all" />
+                      <img 
+                        src="https://cdn.poehali.dev/files/1c5d1a67-5c79-4260-b50f-3751398e83cc.jpg" 
+                        alt="ALICEPRO Cosmo" 
+                        className="relative z-10 w-full h-auto rounded-2xl"
+                      />
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="relative group">
+                      <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-secondary/20 rounded-3xl blur-2xl group-hover:blur-3xl transition-all" />
+                      <img 
+                        src="https://cdn.poehali.dev/files/0a5ce9a6-744d-446a-901c-a12be680a70d.jpg" 
+                        alt="ALICEPRO Cosmo" 
+                        className="relative z-10 w-full h-auto rounded-2xl"
+                      />
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="relative group">
+                      <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-secondary/20 rounded-3xl blur-2xl group-hover:blur-3xl transition-all" />
+                      <img 
+                        src="https://cdn.poehali.dev/files/c5bc9a61-41a4-4405-bf6c-e172cc10749c.jpg" 
+                        alt="ALICEPRO Cosmo" 
+                        className="relative z-10 w-full h-auto rounded-2xl"
+                      />
+                    </div>
+                  </CarouselItem>
+                </CarouselContent>
+                <CarouselPrevious className="left-4" />
+                <CarouselNext className="right-4" />
+              </Carousel>
             </div>
 
             <div className="space-y-8">
