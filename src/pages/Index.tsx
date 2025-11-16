@@ -391,18 +391,11 @@ const Index = () => {
               Готовы к новому уровню игры? Мы всегда рады ответить на ваши вопросы.
             </p>
 
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
               <Card className="p-8 bg-black/50 border-border hover:border-accent/50 transition-all group">
                 <Icon name="Mail" className="text-accent mb-4 mx-auto group-hover:scale-110 transition-transform" size={40} />
                 <div className="font-semibold mb-2">Email</div>
                 <a href="mailto:info@alicepro.ru" className="text-muted-foreground hover:text-accent transition-colors">alicepro.padel@gmail.com</a>
-              </Card>
-
-              <Card className="p-8 bg-black/50 border-border hover:border-accent/50 transition-all group">
-                <div className="font-semibold mb-2">Телефон</div>
-                <a href="tel:+74951234567" className="text-muted-foreground hover:text-accent transition-colors">
-                  +7 (495) 123-45-67
-                </a>
               </Card>
 
               <Card className="p-8 bg-black/50 border-border hover:border-accent/50 transition-all group">
