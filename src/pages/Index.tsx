@@ -378,6 +378,74 @@ const Index = () => {
         </div>
       </section>
 
+      <section id="contract-manufacturing" className="py-24 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-transparent to-secondary/10" />
+        <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-3xl" />
+        
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="max-w-4xl mx-auto text-center mb-16">
+            <div className="inline-block px-6 py-3 bg-accent/20 rounded-full border border-accent/30 mb-6">
+              <span className="text-neon text-sm font-semibold">ПРОИЗВОДСТВО</span>
+            </div>
+            <h2 className="text-5xl font-bold mb-8">КОНТРАКТНОЕ ПРОИЗВОДСТВО ПОД ВАШИМ БРЕНДОМ</h2>
+            <p className="text-xl text-muted-foreground leading-relaxed">
+              Мы готовы оперативно разработать с вами уникальный дизайн, выработать корпоративный стиль с необходимыми характеристиками ракетки, падел мячей.
+            </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent>
+                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                  <Card className="overflow-hidden border-border bg-black/50 hover:border-accent/50 transition-all">
+                    <img 
+                      src="https://cdn.poehali.dev/files/f15203e5-8240-4c93-b2b9-2c9731e76596.jpg" 
+                      alt="Ракетка с уникальным дизайном"
+                      className="w-full h-[400px] object-cover"
+                    />
+                  </Card>
+                </CarouselItem>
+                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                  <Card className="overflow-hidden border-border bg-black/50 hover:border-accent/50 transition-all">
+                    <img 
+                      src="https://cdn.poehali.dev/files/14903e10-8808-4cbf-bc13-6d480e3663be.jpg" 
+                      alt="Ракетка CASACANA"
+                      className="w-full h-[400px] object-cover"
+                    />
+                  </Card>
+                </CarouselItem>
+                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                  <Card className="overflow-hidden border-border bg-black/50 hover:border-accent/50 transition-all">
+                    <img 
+                      src="https://cdn.poehali.dev/files/12601a8d-8e06-4e18-b707-d4c4de01dc97.jpg" 
+                      alt="Ракетка с серебристым дизайном"
+                      className="w-full h-[400px] object-cover"
+                    />
+                  </Card>
+                </CarouselItem>
+                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                  <Card className="overflow-hidden border-border bg-black/50 hover:border-accent/50 transition-all">
+                    <img 
+                      src="https://cdn.poehali.dev/files/b6e84e7e-52fc-4642-8a8b-87f8a9adb7a4.jpg" 
+                      alt="Яркая ракетка ASYSTEM"
+                      className="w-full h-[400px] object-cover"
+                    />
+                  </Card>
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious className="left-4" />
+              <CarouselNext className="right-4" />
+            </Carousel>
+          </div>
+        </div>
+      </section>
+
       <section id="contact" className="py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-t from-accent/10 to-transparent" />
         
