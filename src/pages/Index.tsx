@@ -399,7 +399,6 @@ const Index = () => {
               </Card>
 
               <Card className="p-8 bg-black/50 border-border hover:border-accent/50 transition-all group">
-                <Icon name="Phone" className="text-accent mb-4 mx-auto group-hover:scale-110 transition-transform" size={40} />
                 <div className="font-semibold mb-2">Телефон</div>
                 <a href="tel:+74951234567" className="text-muted-foreground hover:text-accent transition-colors">
                   +7 (495) 123-45-67
