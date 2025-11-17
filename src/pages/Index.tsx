@@ -20,10 +20,10 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-border">
-        <div className="container mx-auto px-6 py-4">
+        <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <div className="text-2xl font-bold tracking-wider">
+              <div className="text-xl sm:text-2xl font-bold tracking-wider">
                 <span className="text-white">ALICE</span>
                 <span className="text-lime-400">PRO</span>
               </div>
@@ -38,39 +38,39 @@ const Index = () => {
         </div>
       </nav>
 
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 sm:pt-20">
         <div className="absolute inset-0 bg-gradient-to-br from-background via-black to-background" />
         <div className="absolute inset-0 bg-carbon opacity-30" />
         
-        <div className="absolute top-20 left-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse-glow" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse-glow" />
+        <div className="absolute top-20 left-10 w-48 h-48 sm:w-96 sm:h-96 bg-accent/10 rounded-full blur-3xl animate-pulse-glow" />
+        <div className="absolute bottom-20 right-10 w-48 h-48 sm:w-96 sm:h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse-glow" />
 
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className={`space-y-8 ${isVisible ? 'animate-slide-in-left' : 'opacity-0'}`}>
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
+          <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
+            <div className={`space-y-6 sm:space-y-8 ${isVisible ? 'animate-slide-in-left' : 'opacity-0'}`}>
               <div className="space-y-4">
-                <div className="inline-block py-2 bg-accent/20 rounded-full border border-accent/30 my-0 px-4">
-                  <span className="text-neon text-sm font-semibold">DESIGN BY RUSSIA</span>
+                <div className="inline-block py-2 bg-accent/20 rounded-full border border-accent/30 my-0 px-3 sm:px-4">
+                  <span className="text-neon text-xs sm:text-sm font-semibold">DESIGN BY RUSSIA</span>
                 </div>
-                <h1 className="text-6xl md:text-7xl font-bold leading-tight">
+                <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold leading-tight">
                   ПЕРВЫЙ<br />
                   РОССИЙСКИЙ<br />
                   <span className="text-neon">БРЕНД</span>
                 </h1>
-                <p className="text-xl text-muted-foreground font-light">
+                <p className="text-base sm:text-xl text-muted-foreground font-light">
                   Премиальные ракетки для падел тенниса.<br />
                   Технологии, созданные для удовольствия от игры.
                 </p>
               </div>
-              <div className="flex gap-4">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <Button 
                   size="lg" 
-                  className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold px-8 py-6 text-lg rounded-full"
+                  className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg rounded-full w-full sm:w-auto"
                 >AlicePro Cosmo 3k</Button>
                 <Button 
                   size="lg" 
                   variant="outline" 
-                  className="border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground font-semibold px-8 py-6 text-lg rounded-full"
+                  className="border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground font-semibold px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg rounded-full w-full sm:w-auto"
                   onClick={() => document.getElementById('product')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   УЗНАТЬ БОЛЬШЕ
@@ -93,19 +93,19 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="product" className="py-24 relative overflow-hidden">
+      <section id="product" className="py-12 sm:py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-accent/5 to-transparent" />
         
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="text-center mb-16 animate-fade-in">
-            <div className="inline-block px-6 py-3 bg-accent/20 rounded-full border border-accent/30 mb-6">
-              <span className="text-neon text-sm font-semibold">НАШ ПРОДУКТ</span>
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
+          <div className="text-center mb-10 sm:mb-16 animate-fade-in">
+            <div className="inline-block px-4 sm:px-6 py-2 sm:py-3 bg-accent/20 rounded-full border border-accent/30 mb-4 sm:mb-6">
+              <span className="text-neon text-xs sm:text-sm font-semibold">НАШ ПРОДУКТ</span>
             </div>
-            <h2 className="text-5xl font-bold mb-4">РАКЕТКИ ALICEPRO</h2>
-            <p className="text-xl text-muted-foreground">Выбор профессиональных спортсменов и начинающих игроков</p>
+            <h2 className="text-3xl sm:text-5xl font-bold mb-3 sm:mb-4">РАКЕТКИ ALICEPRO</h2>
+            <p className="text-base sm:text-xl text-muted-foreground px-4">Выбор профессиональных спортсменов и начинающих игроков</p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center max-w-6xl mx-auto">
             <div className="relative">
               <Carousel className="w-full">
                 <CarouselContent>
@@ -145,44 +145,44 @@ const Index = () => {
               </Carousel>
             </div>
 
-            <div className="space-y-8">
+            <div className="space-y-6 sm:space-y-8">
               <div>
-                <h3 className="text-4xl font-bold mb-4">COSMO 3K</h3>
-                <p className="text-muted-foreground text-lg">
+                <h3 className="text-2xl sm:text-4xl font-bold mb-3 sm:mb-4">COSMO 3K</h3>
+                <p className="text-muted-foreground text-base sm:text-lg">
                   Первая ракетка российского производства, созданная для максимального 
                   удовольствия от игры. Каждая характеристика продумана до мелочей.
                 </p>
               </div>
 
-              <div className="grid grid-cols-2 gap-6">
-                <Card className="p-6 bg-black/50 border-border">
-                  <Icon name="Diamond" className="text-accent mb-3" size={32} />
-                  <div className="text-sm text-muted-foreground mb-1">Форма</div>
-                  <div className="text-xl font-bold">Алмаз</div>
+              <div className="grid grid-cols-2 gap-3 sm:gap-6">
+                <Card className="p-3 sm:p-6 bg-black/50 border-border">
+                  <Icon name="Diamond" className="text-accent mb-2 sm:mb-3" size={24} />
+                  <div className="text-xs sm:text-sm text-muted-foreground mb-1">Форма</div>
+                  <div className="text-base sm:text-xl font-bold">Алмаз</div>
                 </Card>
-                <Card className="p-6 bg-black/50 border-border">
-                  <Icon name="Weight" className="text-accent mb-3" size={32} />
-                  <div className="text-sm text-muted-foreground mb-1">Вес</div>
-                  <div className="text-xl font-bold">365г</div>
+                <Card className="p-3 sm:p-6 bg-black/50 border-border">
+                  <Icon name="Weight" className="text-accent mb-2 sm:mb-3" size={24} />
+                  <div className="text-xs sm:text-sm text-muted-foreground mb-1">Вес</div>
+                  <div className="text-base sm:text-xl font-bold">365г</div>
                 </Card>
-                <Card className="p-6 bg-black/50 border-border">
-                  <Icon name="Scale" className="text-accent mb-3" size={32} />
-                  <div className="text-sm text-muted-foreground mb-1">Баланс</div>
-                  <div className="text-xl font-bold">Нейтральный</div>
+                <Card className="p-3 sm:p-6 bg-black/50 border-border">
+                  <Icon name="Scale" className="text-accent mb-2 sm:mb-3" size={24} />
+                  <div className="text-xs sm:text-sm text-muted-foreground mb-1">Баланс</div>
+                  <div className="text-base sm:text-xl font-bold">Нейтральный</div>
                 </Card>
-                <Card className="p-6 bg-black/50 border-border">
-                  <Icon name="Shield" className="text-accent mb-3" size={32} />
-                  <div className="text-sm text-muted-foreground mb-1">Жесткость</div>
-                  <div className="text-xl font-bold">3K Carbon</div>
+                <Card className="p-3 sm:p-6 bg-black/50 border-border">
+                  <Icon name="Shield" className="text-accent mb-2 sm:mb-3" size={24} />
+                  <div className="text-xs sm:text-sm text-muted-foreground mb-1">Жесткость</div>
+                  <div className="text-base sm:text-xl font-bold">3K Carbon</div>
                 </Card>
               </div>
 
-              <Card className="p-6 bg-gradient-to-br from-accent/10 to-transparent border-accent/30">
-                <div className="flex items-start gap-4">
-                  <Icon name="Sparkles" className="text-neon mt-1" size={24} />
+              <Card className="p-4 sm:p-6 bg-gradient-to-br from-accent/10 to-transparent border-accent/30">
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <Icon name="Sparkles" className="text-neon mt-1 flex-shrink-0" size={20} />
                   <div>
-                    <div className="font-semibold mb-2">Уникальное покрытие</div>
-                    <div className="text-sm text-muted-foreground">Толщина внешнего слоя вашей падел ракетки на 20% превышает стандартное покрытие из 3K карбона, что обеспечивает непревзойденный контроль и максимальную долговечность, позволяя игроку сохранять стабильность и точность ударов даже при интенсивной игре.</div>
+                    <div className="text-sm sm:text-base font-semibold mb-2">Уникальное покрытие</div>
+                    <div className="text-xs sm:text-sm text-muted-foreground">Толщина внешнего слоя вашей падел ракетки на 20% превышает стандартное покрытие из 3K карбона, что обеспечивает непревзойденный контроль и максимальную долговечность, позволяя игроку сохранять стабильность и точность ударов даже при интенсивной игре.</div>
                   </div>
                 </div>
               </Card>
@@ -191,28 +191,28 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="target-audience" className="py-24 bg-black/50 relative overflow-hidden">
+      <section id="target-audience" className="py-12 sm:py-24 bg-black/50 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-accent/5 via-transparent to-accent/5" />
         
-        <div className="container mx-auto px-6 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-16 animate-fade-in">
-              <div className="inline-block px-6 py-3 bg-accent/20 rounded-full border border-accent/30 mb-6">
-                <span className="text-neon text-sm font-semibold">ДЛЯ КОГО</span>
+            <div className="text-center mb-10 sm:mb-16 animate-fade-in">
+              <div className="inline-block px-4 sm:px-6 py-2 sm:py-3 bg-accent/20 rounded-full border border-accent/30 mb-4 sm:mb-6">
+                <span className="text-neon text-xs sm:text-sm font-semibold">ДЛЯ КОГО</span>
               </div>
-              <h2 className="text-5xl font-bold mb-6">ДЛЯ КОГО ALICEPRO COSMO 3K</h2>
+              <h2 className="text-3xl sm:text-5xl font-bold mb-4 sm:mb-6">ДЛЯ КОГО ALICEPRO COSMO 3K</h2>
             </div>
 
-            <div className="space-y-8">
-              <Card className="p-10 bg-gradient-to-br from-card/80 to-transparent border-accent/30 backdrop-blur-sm">
-                <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 bg-accent/20 rounded-full">
-                      <Icon name="Heart" className="text-neon" size={32} />
+            <div className="space-y-6 sm:space-y-8">
+              <Card className="p-5 sm:p-10 bg-gradient-to-br from-card/80 to-transparent border-accent/30 backdrop-blur-sm">
+                <div className="space-y-4 sm:space-y-6">
+                  <div className="flex items-start gap-3 sm:gap-4">
+                    <div className="p-2 sm:p-3 bg-accent/20 rounded-full flex-shrink-0">
+                      <Icon name="Heart" className="text-neon" size={24} />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-2xl font-bold mb-4 text-neon">Первая личная ракетка для влюблённых в падел</h3>
-                      <p className="text-lg text-muted-foreground leading-relaxed">
+                      <h3 className="text-lg sm:text-2xl font-bold mb-3 sm:mb-4 text-neon">Первая личная ракетка для влюблённых в падел</h3>
+                      <p className="text-sm sm:text-lg text-muted-foreground leading-relaxed">
                         Вы уже попробовали падел на арендных ракетках и почувствовали, как этот спорт захватывает. 
                         Вы хотите свою первую личную ракетку, которая станет вашим надёжным партнёром на корте. 
                         <span className="text-foreground font-semibold"> ALICEPRO Cosmo 3K</span> создана именно для таких моментов.
@@ -220,43 +220,43 @@ const Index = () => {
                     </div>
                   </div>
 
-                  <div className="grid md:grid-cols-3 gap-6 pt-6">
-                    <div className="space-y-3">
-                      <div className="flex items-center gap-3">
-                        <Icon name="TrendingUp" className="text-accent" size={24} />
-                        <h4 className="font-semibold">Рост вместе с вами</h4>
+                  <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 pt-4 sm:pt-6">
+                    <div className="space-y-2 sm:space-y-3">
+                      <div className="flex items-center gap-2 sm:gap-3">
+                        <Icon name="TrendingUp" className="text-accent flex-shrink-0" size={20} />
+                        <h4 className="text-sm sm:text-base font-semibold">Рост вместе с вами</h4>
                       </div>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-xs sm:text-sm text-muted-foreground">
                         Эта ракетка прослужит долгие годы, развиваясь вместе с вашими навыками. 
                         Не придётся менять через пару месяцев.
                       </p>
                     </div>
 
-                    <div className="space-y-3">
-                      <div className="flex items-center gap-3">
-                        <Icon name="Zap" className="text-accent" size={24} />
-                        <h4 className="font-semibold">Мощь + Контроль</h4>
+                    <div className="space-y-2 sm:space-y-3">
+                      <div className="flex items-center gap-2 sm:gap-3">
+                        <Icon name="Zap" className="text-accent flex-shrink-0" size={20} />
+                        <h4 className="text-sm sm:text-base font-semibold">Мощь + Контроль</h4>
                       </div>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-xs sm:text-sm text-muted-foreground">
                         Покрытие 3K карбон и наполнитель Eva Soft дают более мощный удар, 
                         сохраняя контроль и гася вибрации.
                       </p>
                     </div>
 
-                    <div className="space-y-3">
-                      <div className="flex items-center gap-3">
-                        <Icon name="Shield" className="text-accent" size={24} />
-                        <h4 className="font-semibold">Следующий уровень</h4>
+                    <div className="space-y-2 sm:space-y-3 sm:col-span-2 md:col-span-1">
+                      <div className="flex items-center gap-2 sm:gap-3">
+                        <Icon name="Shield" className="text-accent flex-shrink-0" size={20} />
+                        <h4 className="text-sm sm:text-base font-semibold">Следующий уровень</h4>
                       </div>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-xs sm:text-sm text-muted-foreground">
                         Уже не мягкая ракетка из стекловолокна для новичков, 
                         а настоящий инструмент для серьёзной игры.
                       </p>
                     </div>
                   </div>
 
-                  <div className="pt-6 border-t border-accent/20">
-                    <p className="text-center text-lg text-foreground">
+                  <div className="pt-4 sm:pt-6 border-t border-accent/20">
+                    <p className="text-center text-sm sm:text-lg text-foreground">
                       <span className="text-neon font-semibold">Cosmo 3K</span> — идеальный выбор для тех, 
                       кто делает следующий шаг от первых экспериментов к настоящей любви к паделу.
                     </p>
@@ -268,51 +268,51 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="values" className="py-24 bg-black/30">
-        <div className="container mx-auto px-6">
+      <section id="values" className="py-12 sm:py-24 bg-black/30">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-16 animate-fade-in">
-              <div className="inline-block px-6 py-3 bg-secondary/20 rounded-full border border-secondary/30 mb-6">
-                <span className="text-secondary text-sm font-semibold">НАШИ ЦЕННОСТИ</span>
+            <div className="text-center mb-10 sm:mb-16 animate-fade-in">
+              <div className="inline-block px-4 sm:px-6 py-2 sm:py-3 bg-secondary/20 rounded-full border border-secondary/30 mb-4 sm:mb-6">
+                <span className="text-secondary text-xs sm:text-sm font-semibold">НАШИ ЦЕННОСТИ</span>
               </div>
-              <h2 className="text-5xl font-bold mb-6">КАЧЕСТВО, НЕ ПОНТЫ</h2>
+              <h2 className="text-3xl sm:text-5xl font-bold mb-4 sm:mb-6">КАЧЕСТВО, НЕ ПОНТЫ</h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <Card className="p-8 bg-gradient-to-br from-card to-transparent border-border hover:border-accent/50 transition-all">
-                <Icon name="Target" className="text-accent mb-4" size={40} />
-                <h3 className="text-2xl font-bold mb-4">Фокус на характеристиках</h3>
-                <p className="text-muted-foreground leading-relaxed">
+            <div className="grid sm:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12">
+              <Card className="p-5 sm:p-8 bg-gradient-to-br from-card to-transparent border-border hover:border-accent/50 transition-all">
+                <Icon name="Target" className="text-accent mb-3 sm:mb-4" size={32} />
+                <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Фокус на характеристиках</h3>
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                   Мы не гонимся за ярким дизайном и маркетинговыми уловками. 
                   Каждый грамм, каждый миллиметр, каждый материал — всё подчинено одной цели: 
                   создать ракетку, с которой вы будете играть лучше и получать больше удовольствия.
                 </p>
               </Card>
 
-              <Card className="p-8 bg-gradient-to-br from-card to-transparent border-border hover:border-accent/50 transition-all">
-                <Icon name="Heart" className="text-secondary mb-4" size={40} />
-                <h3 className="text-2xl font-bold mb-4">Удовольствие от игры</h3>
-                <p className="text-muted-foreground leading-relaxed">
+              <Card className="p-5 sm:p-8 bg-gradient-to-br from-card to-transparent border-border hover:border-accent/50 transition-all">
+                <Icon name="Heart" className="text-secondary mb-3 sm:mb-4" size={32} />
+                <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Удовольствие от игры</h3>
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                   Наша миссия — сделать так, чтобы каждый удар приносил радость. 
                   Идеальный баланс, оптимальный вес, продуманная жесткость — 
                   всё для того, чтобы ракетка стала продолжением вашей руки.
                 </p>
               </Card>
 
-              <Card className="p-8 bg-gradient-to-br from-card to-transparent border-border hover:border-accent/50 transition-all">
-                <Icon name="Zap" className="text-accent mb-4" size={40} />
-                <h3 className="text-2xl font-bold mb-4">Инновации без компромиссов</h3>
-                <p className="text-muted-foreground leading-relaxed">
+              <Card className="p-5 sm:p-8 bg-gradient-to-br from-card to-transparent border-border hover:border-accent/50 transition-all">
+                <Icon name="Zap" className="text-accent mb-3 sm:mb-4" size={32} />
+                <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Инновации без компромиссов</h3>
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                   Мы используем передовые технологии и материалы, но только если они действительно 
                   улучшают игровые характеристики. Никакого маркетинга ради маркетинга — 
                   только реальные преимущества на корте.
                 </p>
               </Card>
 
-              <Card className="p-8 bg-gradient-to-br from-card to-transparent border-border hover:border-accent/50 transition-all">
-                <Icon name="Award" className="text-secondary mb-4" size={40} />
-                <h3 className="text-2xl font-bold mb-4">Российское качество</h3>
-                <p className="text-muted-foreground leading-relaxed">
+              <Card className="p-5 sm:p-8 bg-gradient-to-br from-card to-transparent border-border hover:border-accent/50 transition-all">
+                <Icon name="Award" className="text-secondary mb-3 sm:mb-4" size={32} />
+                <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Российское качество</h3>
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                   Мы гордимся тем, что создаём первые российские ракетки для падела мирового уровня. 
                   Наша цель — показать, что российские технологии и инженерная мысль 
                   могут конкурировать с лучшими брендами планеты.
@@ -323,53 +323,53 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="distribution" className="py-24 relative overflow-hidden">
+      <section id="distribution" className="py-12 sm:py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 via-transparent to-accent/10" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/5 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] sm:w-[600px] sm:h-[600px] bg-accent/5 rounded-full blur-3xl" />
         
-        <div className="container mx-auto px-6 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-block px-6 py-3 bg-secondary/20 rounded-full border border-secondary/30 mb-6">
-              <span className="text-secondary text-sm font-semibold">ПАРТНЁРСТВО</span>
+            <div className="inline-block px-4 sm:px-6 py-2 sm:py-3 bg-secondary/20 rounded-full border border-secondary/30 mb-4 sm:mb-6">
+              <span className="text-secondary text-xs sm:text-sm font-semibold">ПАРТНЁРСТВО</span>
             </div>
-            <h2 className="text-5xl font-bold mb-8">ДИСТРИБЬЮЦИЯ</h2>
-            <p className="text-xl text-muted-foreground mb-12 leading-relaxed">Команда ALICEPRO всегда готова к сотрудничеству  по всему миру. Мы ищем партнёров, которые разделяют наши ценности качества и инноваций.</p>
+            <h2 className="text-3xl sm:text-5xl font-bold mb-6 sm:mb-8">ДИСТРИБЬЮЦИЯ</h2>
+            <p className="text-base sm:text-xl text-muted-foreground mb-8 sm:mb-12 leading-relaxed px-4">Команда ALICEPRO всегда готова к сотрудничеству  по всему миру. Мы ищем партнёров, которые разделяют наши ценности качества и инноваций.</p>
 
-            <Card className="p-12 bg-gradient-to-br from-card/80 to-transparent border-border backdrop-blur-sm">
-              <div className="grid md:grid-cols-3 gap-8 mb-10">
-                <div className="space-y-3">
-                  <Icon name="Handshake" className="text-accent mx-auto" size={48} />
-                  <h3 className="text-lg font-bold">Взаимовыгодное сотрудничество</h3>
-                  <p className="text-sm text-muted-foreground">
+            <Card className="p-6 sm:p-12 bg-gradient-to-br from-card/80 to-transparent border-border backdrop-blur-sm">
+              <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-10">
+                <div className="space-y-2 sm:space-y-3">
+                  <Icon name="Handshake" className="text-accent mx-auto" size={40} />
+                  <h3 className="text-base sm:text-lg font-bold">Взаимовыгодное сотрудничество</h3>
+                  <p className="text-xs sm:text-sm text-muted-foreground">
                     Гибкие условия для дистрибьюторов
                   </p>
                 </div>
-                <div className="space-y-3">
-                  <Icon name="Globe" className="text-accent mx-auto" size={48} />
-                  <h3 className="text-lg font-bold">Международное присутствие</h3>
-                  <p className="text-sm text-muted-foreground">
+                <div className="space-y-2 sm:space-y-3">
+                  <Icon name="Globe" className="text-accent mx-auto" size={40} />
+                  <h3 className="text-base sm:text-lg font-bold">Международное присутствие</h3>
+                  <p className="text-xs sm:text-sm text-muted-foreground">
                     Расширяем географию продаж
                   </p>
                 </div>
-                <div className="space-y-3">
-                  <Icon name="TrendingUp" className="text-accent mx-auto" size={48} />
-                  <h3 className="text-lg font-bold">Растущий рынок</h3>
-                  <p className="text-sm text-muted-foreground">
+                <div className="space-y-2 sm:space-y-3 sm:col-span-2 md:col-span-1">
+                  <Icon name="TrendingUp" className="text-accent mx-auto" size={40} />
+                  <h3 className="text-base sm:text-lg font-bold">Растущий рынок</h3>
+                  <p className="text-xs sm:text-sm text-muted-foreground">
                     Падел — самый быстрорастущий спорт
                   </p>
                 </div>
               </div>
 
-              <div className="border-t border-border pt-8">
-                <p className="text-lg mb-6 text-muted-foreground">
+              <div className="border-t border-border pt-6 sm:pt-8">
+                <p className="text-sm sm:text-lg mb-4 sm:mb-6 text-muted-foreground px-4">
                   Чтобы обсудить условия взаимодействия с нами, свяжитесь через Telegram
                 </p>
                 <Button 
                   size="lg" 
-                  className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold px-10 py-6 text-lg rounded-full inline-flex items-center gap-3"
+                  className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold px-6 sm:px-10 py-5 sm:py-6 text-base sm:text-lg rounded-full inline-flex items-center gap-2 sm:gap-3 w-full sm:w-auto"
                   onClick={() => window.open('https://t.me/pravda_rf', '_blank')}
                 >
-                  <Icon name="Send" size={24} />
+                  <Icon name="Send" size={20} />
                   НАПИСАТЬ В TELEGRAM
                 </Button>
               </div>
@@ -378,17 +378,17 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="contract-manufacturing" className="py-24 relative overflow-hidden">
+      <section id="contract-manufacturing" className="py-12 sm:py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-transparent to-secondary/10" />
-        <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-3xl" />
+        <div className="absolute top-1/4 right-1/4 w-[250px] h-[250px] sm:w-[500px] sm:h-[500px] bg-secondary/5 rounded-full blur-3xl" />
         
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <div className="inline-block px-6 py-3 bg-accent/20 rounded-full border border-accent/30 mb-6">
-              <span className="text-neon text-sm font-semibold">ПРОИЗВОДСТВО</span>
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
+          <div className="max-w-4xl mx-auto text-center mb-10 sm:mb-16">
+            <div className="inline-block px-4 sm:px-6 py-2 sm:py-3 bg-accent/20 rounded-full border border-accent/30 mb-4 sm:mb-6">
+              <span className="text-neon text-xs sm:text-sm font-semibold">ПРОИЗВОДСТВО</span>
             </div>
-            <h2 className="text-5xl font-bold mb-8">КОНТРАКТНОЕ ПРОИЗВОДСТВО ПОД ВАШИМ БРЕНДОМ</h2>
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <h2 className="text-2xl sm:text-5xl font-bold mb-6 sm:mb-8 px-4">КОНТРАКТНОЕ ПРОИЗВОДСТВО ПОД ВАШИМ БРЕНДОМ</h2>
+            <p className="text-base sm:text-xl text-muted-foreground leading-relaxed px-4">
               Мы готовы оперативно разработать с вами уникальный дизайн, выработать корпоративный стиль с необходимыми характеристиками ракетки, падел мячей.
             </p>
           </div>
@@ -446,39 +446,39 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="contact" className="py-24 relative overflow-hidden">
+      <section id="contact" className="py-12 sm:py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-t from-accent/10 to-transparent" />
         
-        <div className="container mx-auto px-6 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-block px-6 py-3 bg-accent/20 rounded-full border border-accent/30 mb-6">
-              <span className="text-neon text-sm font-semibold">КОНТАКТЫ</span>
+            <div className="inline-block px-4 sm:px-6 py-2 sm:py-3 bg-accent/20 rounded-full border border-accent/30 mb-4 sm:mb-6">
+              <span className="text-neon text-xs sm:text-sm font-semibold">КОНТАКТЫ</span>
             </div>
-            <h2 className="text-5xl font-bold mb-8">СВЯЖИТЕСЬ С НАМИ</h2>
-            <p className="text-xl text-muted-foreground mb-12">
+            <h2 className="text-3xl sm:text-5xl font-bold mb-6 sm:mb-8">СВЯЖИТЕСЬ С НАМИ</h2>
+            <p className="text-base sm:text-xl text-muted-foreground mb-8 sm:mb-12 px-4">
               Готовы к новому уровню игры? Мы всегда рады ответить на ваши вопросы.
             </p>
 
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <Card className="p-8 bg-black/50 border-border hover:border-accent/50 transition-all group">
-                <Icon name="Mail" className="text-accent mb-4 mx-auto group-hover:scale-110 transition-transform" size={40} />
-                <div className="font-semibold mb-2">Email</div>
-                <a href="mailto:info@alicepro.ru" className="text-muted-foreground hover:text-accent transition-colors">alicepro.padel@gmail.com</a>
+            <div className="grid sm:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12">
+              <Card className="p-6 sm:p-8 bg-black/50 border-border hover:border-accent/50 transition-all group">
+                <Icon name="Mail" className="text-accent mb-3 sm:mb-4 mx-auto group-hover:scale-110 transition-transform" size={32} />
+                <div className="text-sm sm:text-base font-semibold mb-2">Email</div>
+                <a href="mailto:info@alicepro.ru" className="text-sm sm:text-base text-muted-foreground hover:text-accent transition-colors break-all">alicepro.padel@gmail.com</a>
               </Card>
 
-              <Card className="p-8 bg-black/50 border-border hover:border-accent/50 transition-all group">
-                <Icon name="MapPin" className="text-accent mb-4 mx-auto group-hover:scale-110 transition-transform" size={40} />
-                <div className="font-semibold mb-2">Адрес</div>
-                <div className="text-muted-foreground">
+              <Card className="p-6 sm:p-8 bg-black/50 border-border hover:border-accent/50 transition-all group">
+                <Icon name="MapPin" className="text-accent mb-3 sm:mb-4 mx-auto group-hover:scale-110 transition-transform" size={32} />
+                <div className="text-sm sm:text-base font-semibold mb-2">Адрес</div>
+                <div className="text-sm sm:text-base text-muted-foreground">
                   Москва, Россия
                 </div>
               </Card>
             </div>
 
-            <div className="flex justify-center gap-6">
+            <div className="flex justify-center">
               <Button 
                 size="lg" 
-                className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold px-8 py-6 text-lg rounded-full"
+                className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg rounded-full w-full sm:w-auto"
               >
                 НАПИСАТЬ НАМ
               </Button>
@@ -487,19 +487,19 @@ const Index = () => {
         </div>
       </section>
 
-      <footer className="py-12 border-t border-border bg-black/50">
-        <div className="container mx-auto px-6">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="text-2xl font-bold">
+      <footer className="py-8 sm:py-12 border-t border-border bg-black/50">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6">
+            <div className="text-xl sm:text-2xl font-bold">
               <span className="text-white">ALICE</span>
               <span className="text-lime-400">PRO</span>
             </div>
-            <div className="text-muted-foreground text-sm">
+            <div className="text-muted-foreground text-xs sm:text-sm text-center">
               © 2024 ALICEPRO. Первый российский бренд ракеток для падел тенниса.
             </div>
             <div className="flex gap-6">
               <a href="#" className="text-muted-foreground hover:text-accent transition-colors">
-                <Icon name="Instagram" size={24} />
+                <Icon name="Instagram" size={20} />
               </a>
             </div>
           </div>
