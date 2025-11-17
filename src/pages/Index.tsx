@@ -501,12 +501,6 @@ const Index = () => {
               <a href="#" className="text-muted-foreground hover:text-accent transition-colors">
                 <Icon name="Instagram" size={24} />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-accent transition-colors">
-                <Icon name="Facebook" size={24} />
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-accent transition-colors">
-                <Icon name="Youtube" size={24} />
-              </a>
             </div>
           </div>
         </div>
